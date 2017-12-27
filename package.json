@@ -1,0 +1,27 @@
+{
+    "name": "fe-sdk-starter",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+        "ncu": "ncu -au && yarn",
+        "test": "mocha -r ts-node/register test/**/*.ts --timeout 15000",
+        "test:w": "mocha -r ts-node/register --watch-extensions ts --watch test/**/*.ts --timeout 15000",
+        "build": "rm -r dist; tsc --rootDir src"
+    },
+    "repository": "git@github.com:startlines/fe-sdk-starter.git",
+    "author": "honpery <honpery@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/chai": "^4.0.10",
+        "@types/mocha": "^2.2.45",
+        "chai": "^4.1.2",
+        "mocha": "^4.0.1",
+        "npm-check-updates": "^2.14.0",
+        "ts-node": "^4.1.0",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.2"
+    },
+    "dependencies": {
+        "xhttp-js": "^0.0.10"
+    }
+}
